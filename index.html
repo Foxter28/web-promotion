@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="dark scroll-smooth" lang="id">
+<html lang="id">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KALA COFFEE — Single Origin Gayo Arabica, Fresh Roast Bandung</title>
-<meta name="description" content="Kopi single origin Gayo Arabica 200g, disangrai per pesanan di Bandung dan dikirim maksimal 7 hari setelah roasting. Gratis ongkir Pulau Jawa.">
+<meta name="description" content="Kopi single origin Gayo Arabica 200g, disangrai per pesanan di Bandung dan dikirim maksimal 48 jam setelah roasting. Gratis ongkir Pulau Jawa.">
 <meta name="theme-color" content="#151312">
 <meta property="og:type" content="website">
 <meta property="og:title" content="KALA COFFEE — Kopi yang baru dipanggang minggu ini">
@@ -13,405 +13,456 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
-<script>
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        colors: {
-          "outline-variant": "#534434",
-          "surface-tint": "#ffb95f",
-          "surface-container": "#221f1e",
-          "surface-container-low": "#1d1b1a",
-          "surface": "#151312",
-          "background": "#151312",
-          "surface-container-lowest": "#100e0d",
-          "surface-container-high": "#2c2928",
-          "surface-container-highest": "#373433",
-          "outline": "#a08e7a",
-          "on-surface-variant": "#d8c3ad",
-          "on-surface": "#e8e1df",
-          "on-background": "#e8e1df",
-          "primary": "#ffc174",
-          "primary-container": "#f59e0b",
-          "on-primary-container": "#2a1700",
-          "error": "#ffb4ab"
-        },
-        borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
-        spacing: {
-          "margin": "3rem", "space-md": "1rem", "space-sm": "0.5rem", "gutter": "1.5rem",
-          "margin-mobile": "1.25rem", "space-xs": "0.25rem", "gutter-mobile": "1rem",
-          "space-xl": "2.5rem", "space-lg": "1.5rem"
-        },
-        fontFamily: {
-          "display-hero": ["Playfair Display", "serif"],
-          "display-hero-mobile": ["Playfair Display", "serif"],
-          "headline-lg": ["Playfair Display", "serif"],
-          "headline-lg-mobile": ["Playfair Display", "serif"],
-          "headline-md": ["Playfair Display", "serif"],
-          "headline-sm": ["Playfair Display", "serif"],
-          "body-lg": ["Plus Jakarta Sans", "sans-serif"],
-          "body-md": ["Plus Jakarta Sans", "sans-serif"],
-          "body-sm": ["Plus Jakarta Sans", "sans-serif"],
-          "title-lg": ["Plus Jakarta Sans", "sans-serif"],
-          "title-md": ["Plus Jakarta Sans", "sans-serif"],
-          "label-md": ["Plus Jakarta Sans", "sans-serif"],
-          "label-sm": ["Plus Jakarta Sans", "sans-serif"],
-          "cupping-mono": ["Plus Jakarta Sans", "sans-serif"]
-        },
-        fontSize: {
-          "display-hero-mobile": ["38px", { lineHeight: "46px", letterSpacing: "-0.01em", fontWeight: "600" }],
-          "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.02em", fontWeight: "600" }],
-          "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "600" }],
-          "headline-lg-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.01em", fontWeight: "600" }],
-          "headline-sm": ["22px", { lineHeight: "30px", fontWeight: "500" }],
-          "title-lg": ["18px", { lineHeight: "26px", letterSpacing: "0.01em", fontWeight: "700" }],
-          "title-md": ["16px", { lineHeight: "24px", fontWeight: "600" }],
-          "body-lg": ["16px", { lineHeight: "26px", fontWeight: "400" }],
-          "body-md": ["14px", { lineHeight: "22px", fontWeight: "400" }],
-          "body-sm": ["12px", { lineHeight: "18px", fontWeight: "400" }],
-          "label-md": ["13px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }],
-          "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }],
-          "cupping-mono": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "600" }]
-        }
-      }
-    }
-  };
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;display:inline-block;vertical-align:middle;line-height:1}
-  .amber-glow{box-shadow:0 4px 30px -4px rgba(245,158,11,.28),0 2px 10px -2px rgba(217,119,6,.18)}
-  .amber-spotlight{background:radial-gradient(circle at 50% 50%,rgba(245,158,11,.16) 0%,rgba(21,19,18,0) 70%)}
-  :focus-visible{outline:2px solid #f59e0b;outline-offset:3px}
-  input:invalid:not(:placeholder-shown),textarea:invalid:not(:placeholder-shown){border-color:#ffb4ab}
+:root{
+  --bg:#151312; --bg-deep:#100e0d; --surface:#1d1b1a; --surface-2:#221f1e;
+  --surface-3:#2c2928; --line:#534434; --line-soft:rgba(83,68,52,.55);
+  --ink:#e8e1df; --muted:#d8c3ad; --muted-dim:#a08e7a;
+  --amber:#f59e0b; --amber-light:#ffc174; --amber-deep:#b45309;
+  --serif:"Playfair Display",Georgia,serif;
+  --sans:"Plus Jakarta Sans",-apple-system,"Segoe UI",sans-serif;
+  --r:16px; --r-sm:12px; --pill:999px;
+  --glow:0 4px 30px -4px rgba(245,158,11,.28),0 2px 10px -2px rgba(217,119,6,.18);
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+::selection{background:var(--amber);color:#2a1700}
+
+.wrap{width:min(1240px,100% - 3rem);margin-inline:auto}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--amber-light)}
+.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--amber);margin-bottom:.7rem;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.015em;line-height:1.14}
+h1{font-size:clamp(2.15rem,4.6vw,3.5rem)}
+h2{font-size:clamp(1.75rem,3.2vw,2.5rem)}
+h3{font-size:1.06rem;letter-spacing:0;line-height:1.35}
+p{color:var(--muted)}
+.lede{font-size:1.02rem;max-width:58ch}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.95rem 1.7rem;
+  border-radius:var(--r-sm);font-weight:600;font-size:.95rem;border:1px solid transparent;cursor:pointer;
+  transition:transform .18s,background .18s,box-shadow .18s,border-color .18s}
+.btn-primary{background:var(--amber);color:#2a1700;box-shadow:var(--glow)}
+.btn-primary:hover{background:var(--amber-light);transform:translateY(-1px)}
+.btn-primary:active{transform:scale(.985)}
+.btn-ghost{background:var(--surface);border-color:var(--line-soft);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber-light)}
+.btn-sm{padding:.62rem 1.2rem;border-radius:var(--pill);font-size:.85rem}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(21,19,18,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line-soft)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:76px}
+.brand{display:flex;align-items:center;gap:.55rem;font-family:var(--serif);font-size:1.15rem;
+  font-weight:600;letter-spacing:.05em;white-space:nowrap}
+.brand i{width:11px;height:11px;border-radius:50%;background:var(--amber);box-shadow:0 0 12px rgba(245,158,11,.85);
+  transition:transform .2s;flex:none}
+.brand:hover i{transform:scale(1.25)}
+.nav-links{display:flex;gap:2rem;font-size:.85rem;color:var(--muted)}
+.nav-links a:hover{color:var(--amber-light)}
+@media(max-width:820px){.nav-links{display:none}}
+@media(max-width:420px){
+  .nav{gap:.5rem;height:68px}
+  .brand{font-size:.95rem;letter-spacing:.02em}
+  .btn-sm{padding:.55rem .85rem;font-size:.78rem}
+}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:clamp(2.5rem,5vw,4.5rem) 0 clamp(3.5rem,7vw,5.5rem);
+  border-bottom:1px solid var(--line-soft)}
+.hero::before{content:"";position:absolute;top:8%;left:45%;width:720px;height:520px;transform:translateX(-50%);
+  background:radial-gradient(circle,rgba(245,158,11,.15),transparent 68%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,4vw,3.5rem);align-items:center}
+@media(max-width:960px){.hero-grid{grid-template-columns:1fr}}
+.badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem .85rem;border-radius:var(--pill);
+  background:var(--surface);border:1px solid var(--line-soft);margin-bottom:1.4rem}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--amber);flex:none;
+  box-shadow:0 0 0 0 rgba(245,158,11,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(245,158,11,0)}100%{box-shadow:0 0 0 0 rgba(245,158,11,0)}}
+.hero h1 em{font-style:italic;color:var(--amber-light)}
+.hero .lede{margin:1.3rem 0 2rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:2.4rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;
+  border-top:1px solid var(--line-soft);padding-top:1.5rem;font-size:.82rem;color:var(--muted)}
+.stats div{display:flex;align-items:baseline;gap:.4rem}
+.stats strong{color:var(--ink);font-weight:600}
+.stats svg{width:15px;height:15px;color:var(--amber);flex:none;align-self:center}
+
+.pack{position:relative;border-radius:20px;padding:.9rem;background:var(--surface);
+  border:1px solid var(--line-soft);box-shadow:0 40px 70px -45px #000;max-width:420px;margin-inline:auto}
+.pack-frame{position:relative;overflow:hidden;border-radius:14px;aspect-ratio:4/5;background:var(--bg-deep);
+  border:1px solid rgba(83,68,52,.4)}
+.pack-frame img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.pack:hover .pack-frame img{transform:scale(1.04)}
+.tag{position:absolute;display:inline-flex;align-items:center;gap:.4rem;padding:.35rem .7rem;
+  border-radius:var(--pill);font-size:10.5px;font-weight:600;letter-spacing:.06em;
+  background:rgba(16,14,13,.86);backdrop-filter:blur(8px);border:1px solid var(--line-soft)}
+.tag.tl{top:.85rem;left:.85rem}
+.tag.br{bottom:.85rem;right:.85rem;border-radius:9px;color:var(--amber-light)}
+.tag.tl i{width:5px;height:5px;border-radius:50%;background:var(--amber)}
+
+/* SECTIONS */
+section{padding:clamp(3.5rem,7vw,5.5rem) 0}
+.sec-head{max-width:640px;margin:0 auto 3rem;text-align:center}
+.sec-head p{margin-top:.9rem;font-size:1rem}
+.sec-head.left{margin-inline:0;text-align:left}
+.alt{background:var(--bg-deep);border-block:1px solid var(--line-soft)}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.4rem}
+.card{display:flex;flex-direction:column;justify-content:space-between;gap:1.6rem;padding:1.8rem;
+  background:var(--surface-2);border:1px solid var(--line-soft);border-radius:var(--r);transition:.22s}
+.card:hover{border-color:rgba(245,158,11,.55);transform:translateY(-3px)}
+.card p{font-size:.88rem;margin-top:.6rem}
+.ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:1.1rem;
+  background:var(--surface-3);border:1px solid var(--line-soft);color:var(--amber)}
+.ico svg{width:22px;height:22px}
+.card .foot{border-top:1px solid rgba(83,68,52,.4);padding-top:.85rem;font-size:11px;font-weight:600;
+  letter-spacing:.06em;color:var(--amber-light);text-transform:uppercase}
+
+/* PRODUCT + ORDER */
+.split{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+@media(max-width:960px){.split{grid-template-columns:1fr}}
+.flavor{padding:1.5rem;border-radius:var(--r);background:var(--surface);border:1px solid var(--line-soft);margin:1.6rem 0}
+.flavor .label{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-dim);margin-bottom:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1rem}
+.chip{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem .8rem;border-radius:var(--pill);
+  background:var(--surface-2);border:1px solid var(--line-soft);font-size:11.5px;font-weight:600;letter-spacing:.03em}
+.chip i{width:5px;height:5px;border-radius:50%;background:var(--amber)}
+.flavor em{font-size:.82rem;color:var(--muted-dim)}
+.spec{border:1px solid var(--line-soft);border-radius:var(--r);overflow:hidden;background:var(--surface-2);font-size:.88rem}
+.spec div{display:grid;grid-template-columns:minmax(120px,.85fr) 1.6fr;gap:.8rem;padding:.85rem 1.1rem;border-top:1px solid rgba(83,68,52,.45)}
+.spec div:first-child{border-top:0;background:rgba(44,41,40,.5)}
+.spec dt{color:var(--muted-dim)}
+.spec dd{color:var(--ink)}
+.spec dd.hi{color:var(--amber-light);font-weight:600}
+
+.order{position:relative;padding:clamp(1.4rem,3vw,1.9rem);border-radius:20px;background:var(--surface);
+  border:1px solid rgba(245,158,11,.3);box-shadow:0 40px 70px -50px #000;scroll-margin-top:96px}
+.order .ribbon{position:absolute;top:-11px;right:1.4rem;padding:.28rem .7rem;border-radius:var(--pill);
+  background:var(--amber);color:#2a1700;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.order h3{font-size:1.4rem}
+.order .sub{font-size:.82rem;margin:.35rem 0 1.4rem}
+.field{margin-bottom:.95rem}
+.field label{display:block;font-size:12px;font-weight:600;letter-spacing:.03em;margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;padding:.8rem .9rem;font:inherit;font-size:.9rem;
+  color:var(--ink);background:var(--surface-2);border:1px solid var(--line-soft);border-radius:10px;
+  transition:border-color .18s,box-shadow .18s}
+.field textarea{resize:vertical;min-height:88px}
+.field input::placeholder,.field textarea::placeholder{color:rgba(216,195,173,.42)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber);
+  box-shadow:0 0 0 3px rgba(245,158,11,.15)}
+.field select{appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a08e7a' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right .7rem center;background-size:17px;padding-right:2.2rem}
+.field input:user-invalid,.field textarea:user-invalid{border-color:#e0685e}
+.total{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 1rem;
+  border-radius:12px;background:rgba(44,41,40,.65);border:1px solid var(--line-soft);margin:.4rem 0 1.1rem}
+.total span{display:block;font-size:.75rem;color:var(--muted-dim)}
+.total b{font-family:var(--serif);font-size:1.25rem;color:var(--amber-light)}
+.total .seal{font-size:10px;font-weight:600;padding:.28rem .6rem;border-radius:var(--pill);
+  background:var(--surface-2);border:1px solid var(--line-soft);white-space:nowrap}
+.order .btn-primary{width:100%;padding-block:1rem;font-size:.98rem}
+.order .fine{font-size:.75rem;text-align:center;margin-top:.75rem;color:var(--muted-dim)}
+.error{font-size:.8rem;color:#ffb4ab;margin-bottom:.8rem}
+.error[hidden]{display:none}
+
+/* TESTIMONIALS */
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.4rem}
+.quote{display:flex;flex-direction:column;justify-content:space-between;gap:1.4rem;padding:1.8rem;
+  background:var(--surface-2);border:1px solid var(--line-soft);border-radius:var(--r);transition:.22s}
+.quote:hover{border-color:rgba(245,158,11,.45)}
+.stars{color:var(--amber);letter-spacing:.18em;font-size:.85rem;margin-bottom:.8rem}
+.quote p{font-size:.9rem;font-style:italic;color:var(--ink)}
+.who{display:flex;align-items:center;gap:.8rem;border-top:1px solid rgba(83,68,52,.45);padding-top:1rem}
+.who .avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:none;
+  background:var(--surface-3);border:1px solid var(--line-soft);color:var(--amber-light);font-weight:700;font-size:.8rem}
+.who b{display:block;font-size:.88rem;font-weight:600;color:var(--ink)}
+.who small{color:var(--muted-dim);font-size:.78rem}
+
+/* FOOTER */
+footer{background:var(--bg-deep);border-top:1px solid var(--line-soft);padding:3.5rem 0 2rem}
+.foot{display:grid;grid-template-columns:1.5fr .8fr 1fr 1fr;gap:2rem}
+@media(max-width:820px){.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.foot{grid-template-columns:1fr}}
+footer h3{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  font-weight:700;margin-bottom:1rem;color:var(--ink)}
+footer .brand{color:var(--amber-light);margin-bottom:.9rem}
+footer p,footer li,footer a{font-size:.85rem}
+footer li+li{margin-top:.55rem}
+footer a:hover{color:var(--amber-light)}
+footer .blurb{max-width:32ch;margin-bottom:1.2rem}
+footer .live{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .75rem;border-radius:9px;
+  background:var(--surface-2);border:1px solid var(--line-soft);font-size:11px;color:var(--muted-dim)}
+footer .live i{width:7px;height:7px;border-radius:50%;background:#34d399;animation:pulse 2.4s infinite}
+.legal{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:2.6rem;
+  padding-top:1.4rem;border-top:1px solid var(--line-soft);font-size:.78rem;color:var(--muted-dim)}
+.legal span:last-child{letter-spacing:.04em}
+
+/* FLOATING WA */
+.fab{position:fixed;right:1.1rem;bottom:1.1rem;z-index:40;display:inline-flex;align-items:center;gap:.6rem;
+  padding:.75rem 1.2rem;border-radius:var(--pill);background:rgba(44,41,40,.94);backdrop-filter:blur(10px);
+  border:1px solid var(--line-soft);font-size:.83rem;font-weight:600;box-shadow:0 20px 40px -20px #000;transition:.2s}
+.fab:hover{border-color:var(--amber);transform:translateY(-2px);color:var(--amber-light)}
+.fab i{width:9px;height:9px;border-radius:50%;background:#34d399;animation:pulse 2.4s infinite;flex:none}
+.fab svg{width:17px;height:17px;color:var(--amber)}
+@media(max-width:480px){.fab span{display:none}.fab{padding:.85rem}}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
-<body class="bg-background text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container relative">
+<body>
 
-<!-- 1. NAVIGASI STICKY -->
-<header class="bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 sticky top-0 z-50">
-  <div class="flex justify-between items-center max-w-7xl mx-auto px-6 md:px-12 h-20 w-full">
-    <a class="flex items-center gap-2 group" href="#top" aria-label="KALA COFFEE, ke atas halaman">
-      <span class="w-3 h-3 rounded-full bg-primary-container inline-block shadow-[0_0_12px_rgba(245,158,11,0.8)] group-hover:scale-125 transition-transform duration-200"></span>
-      <span class="font-headline-sm text-headline-sm tracking-tight font-semibold">KALA COFFEE</span>
-    </a>
-    <nav class="hidden md:flex items-center space-x-8" aria-label="Navigasi utama">
-      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#keunggulan">Keunggulan</a>
-      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#produk">Detail Produk</a>
-      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#ulasan">Ulasan</a>
-      <a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#kontak">Kontak</a>
-    </nav>
-    <a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-surface-tint hover:shadow-[0_0_24px_rgba(245,158,11,0.4)] active:scale-[0.98] transition-all duration-200" href="#pesan">Pesan Sekarang</a>
-  </div>
+<!-- 1. NAVIGASI -->
+<header>
+  <nav class="wrap nav" aria-label="Navigasi utama">
+    <a class="brand" href="#top"><i></i>KALA COFFEE</a>
+    <div class="nav-links">
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#produk">Detail Produk</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+    <a class="btn btn-primary btn-sm" href="#pesan">Pesan Sekarang</a>
+  </nav>
 </header>
 
 <main id="top">
 <!-- 2. HERO -->
-<section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden border-b border-outline-variant/30">
-  <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[500px] amber-spotlight pointer-events-none -z-10"></div>
-  <div class="absolute -top-32 right-10 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none -z-10"></div>
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-      <div class="lg:col-span-7 flex flex-col items-start">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-container-low border border-outline-variant/50 mb-6">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
-          </span>
-          <span class="font-cupping-mono text-cupping-mono text-primary tracking-wider uppercase">Single Origin · Roasted Fresh</span>
-        </div>
-        <h1 class="font-display-hero text-display-hero-mobile md:text-display-hero tracking-tight mb-6">
-          Kopi yang baru dipanggang minggu ini, <span class="italic text-primary">bukan setahun lalu.</span>
-        </h1>
-        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-8 leading-relaxed">
-          Dari lereng Gayo hingga ke cangkir Anda dalam hitungan hari. Kala Coffee meroasting biji Arabica pilihan secara micro-batch di Bandung hanya ketika pesanan masuk — menjamin kesegaran minyak esensial dan aroma bunga melati yang mekar sempurna.
-        </p>
-        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
-          <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-primary-container text-on-primary-container font-title-md text-title-md amber-glow hover:bg-surface-tint active:scale-[0.98] transition-all duration-200" href="#pesan" data-cta="hero">
-            <span>Pesan Sekarang — Rp 85.000</span>
-            <span class="material-symbols-outlined text-[20px]" aria-hidden="true">arrow_forward</span>
-          </a>
-          <a class="inline-flex items-center justify-center px-7 py-4 rounded-xl bg-surface-container-low border border-outline-variant/60 font-title-md text-title-md hover:border-primary-container hover:text-primary transition-all duration-200" href="#produk">Lihat Detail Produk</a>
-        </div>
-        <div class="w-full pt-8 border-t border-outline-variant/30 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="flex items-center gap-2.5">
-            <span class="text-primary text-base" aria-hidden="true">★</span>
-            <span class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface font-semibold">4.9/5</strong> dari 1.240 ulasan</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">local_fire_department</span>
-            <span class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface font-semibold">7 Hari Garansi</strong> Roast</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="material-symbols-outlined text-primary text-base" aria-hidden="true">local_shipping</span>
-            <span class="font-body-sm text-body-sm text-on-surface-variant"><strong class="text-on-surface font-semibold">Bebas Ongkir</strong> Pulau Jawa</span>
-          </div>
-        </div>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge"><i></i><span class="eyebrow" style="color:var(--amber-light)">Single Origin · Roasted Fresh</span></span>
+      <h1>Kopi yang baru dipanggang minggu ini, <em>bukan setahun lalu.</em></h1>
+      <p class="lede">Dari lereng Gayo hingga ke cangkir Anda dalam hitungan hari. Kala Coffee meroasting biji Arabica pilihan secara micro-batch di Bandung hanya ketika pesanan masuk — menjaga minyak esensial dan aroma bunga melati tetap utuh.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#pesan" data-cta="hero">Pesan Sekarang — Rp 85.000 →</a>
+        <a class="btn btn-ghost" href="#produk">Lihat Detail Produk</a>
       </div>
-      <div class="lg:col-span-5 relative flex justify-center">
-        <div class="relative w-full max-w-md rounded-2xl p-4 bg-surface-container-low border border-outline-variant/40 shadow-2xl group">
-          <div class="absolute -inset-1 bg-gradient-to-tr from-primary-container/20 to-transparent rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-500"></div>
-          <div class="relative overflow-hidden rounded-xl bg-surface-container-lowest border border-outline-variant/20 aspect-[4/5]">
-            <img src="assets/hero-gayo.jpg" width="1024" height="1280" fetchpriority="high"
-                 alt="Kemasan kopi Kala Coffee Gayo Arabica 200 gram dengan segel roasting, ditemani biji kopi sangrai dan dripper keramik"
-                 class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out">
-            <div class="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface/90 backdrop-blur-md border border-outline-variant/60 shadow-lg">
-              <span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
-              <span class="font-cupping-mono text-[11px] tracking-wider font-semibold">GAYO ARABICA · 200G</span>
-            </div>
-            <div class="absolute bottom-4 right-4 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant/60 shadow-lg">
-              <span class="material-symbols-outlined text-primary text-sm" aria-hidden="true">verified</span>
-              <span class="font-cupping-mono text-cupping-mono text-primary font-medium">Batch #284 · Roasting Kemarin</span>
-            </div>
-          </div>
-        </div>
+      <div class="stats">
+        <div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg><span><strong>4.9/5</strong> dari 1.240 ulasan</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2c1 3.5 4 5.5 4 9a4 4 0 0 1-8 0c0-1.5.5-2.5 1-3.5C9.8 10 12 8 12 2Z"/></svg><span><strong>7 Hari Garansi</strong> Roast</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 7h11v9H2zM13 10h4l4 3v3h-8"/><circle cx="6" cy="18.5" r="1.6"/><circle cx="17" cy="18.5" r="1.6"/></svg><span><strong>Bebas Ongkir</strong> Pulau Jawa</span></div>
+      </div>
+    </div>
+    <div class="pack">
+      <div class="pack-frame">
+        <img src="assets/hero-gayo.jpg" width="1024" height="1280" fetchpriority="high" decoding="async"
+             alt="Kemasan kopi Kala Coffee Gayo Arabica 200 gram dengan segel roasted fresh, didampingi biji kopi sangrai dan dripper keramik">
+        <span class="tag tl"><i></i>GAYO ARABICA · 200G</span>
+        <span class="tag br">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="m4 12 5 5L20 6"/></svg>
+          Batch #284 · Roasting Kemarin
+        </span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- 3. VALUE PROPOSITION -->
-<section class="py-24 md:py-32 bg-surface-container-lowest relative border-b border-outline-variant/30" id="keunggulan">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-      <p class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-3">Kenapa Kala</p>
-      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight mb-4">Tiga hal yang bikin rasa kopimu beda.</h2>
-      <p class="font-body-lg text-body-lg text-on-surface-variant">Kami menolak standar kopi rak swalayan yang berumur bulanan. Dedikasi kami ada pada sains ekstraksi dan kesegaran absolut.</p>
+<section id="keunggulan" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Kenapa Kala</span>
+      <h2>Tiga hal yang bikin rasa kopimu beda.</h2>
+      <p>Kami menolak standar kopi rak swalayan yang berumur bulanan. Dedikasi kami ada pada sains ekstraksi dan kesegaran absolut.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/60 hover:-translate-y-1 transition-all duration-300">
+    <div class="cards">
+      <article class="card">
         <div>
-          <div class="w-14 h-14 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary mb-6">
-            <span class="material-symbols-outlined text-3xl" aria-hidden="true">nest_clock_farsight_analog</span>
-          </div>
-          <h3 class="font-title-lg text-title-lg mb-3">Fresh Roast, Bukan Stok Gudang</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Kami tidak pernah menimbun stok di rak distributor. Biji kopi dipanggang maksimal 48 jam sebelum dikirim ke pintu rumah Anda, siap seduh saat fase resting puncak.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+          <h3>Fresh Roast, Bukan Stok Gudang</h3>
+          <p>Kami tidak pernah menimbun stok di rak distributor. Biji kopi dipanggang maksimal 48 jam sebelum dikirim, siap seduh saat fase resting puncak.</p>
         </div>
-        <div class="mt-8 pt-4 border-t border-outline-variant/20 text-primary font-cupping-mono text-cupping-mono">EST. RESTING 5–7 HARI</div>
+        <div class="foot">Est. resting 5–7 hari</div>
       </article>
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/60 hover:-translate-y-1 transition-all duration-300">
+      <article class="card">
         <div>
-          <div class="w-14 h-14 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary mb-6">
-            <span class="material-symbols-outlined text-3xl" aria-hidden="true">landscape</span>
-          </div>
-          <h3 class="font-title-lg text-title-lg mb-3">Langsung dari Petani Gayo</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Bekerja sama langsung dengan koperasi petani di Bener Meriah, Aceh pada elevasi 1.500 mdpl. Proses fair-trade yang menghasilkan petik merah 100% matang pohon.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 18 6-9 4 5.5 2.5-3L21 18z"/><circle cx="8" cy="6" r="2"/></svg></div>
+          <h3>Langsung dari Petani Gayo</h3>
+          <p>Bekerja sama langsung dengan koperasi petani di Bener Meriah, Aceh pada elevasi 1.500 mdpl. Petik merah 100% matang pohon dengan skema harga fair-trade.</p>
         </div>
-        <div class="mt-8 pt-4 border-t border-outline-variant/20 text-primary font-cupping-mono text-cupping-mono">ELEVASI 1.500 MDPL</div>
+        <div class="foot">Elevasi 1.500 mdpl</div>
       </article>
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/60 hover:-translate-y-1 transition-all duration-300">
+      <article class="card">
         <div>
-          <div class="w-14 h-14 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary mb-6">
-            <span class="material-symbols-outlined text-3xl" aria-hidden="true">inventory_2</span>
-          </div>
-          <h3 class="font-title-lg text-title-lg mb-3">Kemasan One-Way Valve Kedap Udara</h3>
-          <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Pouch matte foil multi-layer dengan degassing valve satu arah dan zip lock kedap udara. Menjaga profil aroma karamel &amp; floral tetap utuh hingga cangkir terakhir.</p>
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M4 8V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v3M9 8v12"/></svg></div>
+          <h3>Kemasan One-Way Valve Kedap Udara</h3>
+          <p>Pouch matte foil multi-layer dengan degassing valve satu arah dan zip lock kedap udara. Menjaga profil aroma karamel &amp; floral hingga cangkir terakhir.</p>
         </div>
-        <div class="mt-8 pt-4 border-t border-outline-variant/20 text-primary font-cupping-mono text-cupping-mono">ONE-WAY DEGASSING VALVE</div>
+        <div class="foot">One-way degassing valve</div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- 4. DETAIL PRODUK + FORM ORDER -->
-<section class="py-24 md:py-32 relative" id="produk">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 mb-3">
-          <span class="w-2 h-2 rounded-full bg-primary-container"></span>
-          <span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Spesifikasi Roastery</span>
+<!-- 4. DETAIL PRODUK + PESAN -->
+<section id="produk">
+  <div class="wrap split">
+    <div>
+      <span class="kicker">◇ Spesifikasi Roastery</span>
+      <h2>Detail Kurasi Biji &amp; Profil Rasa</h2>
+      <p style="margin-top:1rem">Dipilih melalui uji cupping ketat berstandar Specialty Coffee Association (SCA) dengan cupping score konsisten di atas 84,5 poin.</p>
+      <div class="flavor">
+        <div class="label">Catatan Rasa Teridentifikasi</div>
+        <div class="chips">
+          <span class="chip"><i></i>Brown Sugar</span>
+          <span class="chip"><i></i>Dark Chocolate</span>
+          <span class="chip"><i></i>Tangerine Zest</span>
+          <span class="chip"><i></i>Jasmine</span>
         </div>
-        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6">Detail Kurasi Biji &amp; Profil Rasa</h2>
-        <p class="font-body-md text-body-md text-on-surface-variant mb-8">Dipilih melalui uji cupping ketat berstandar Specialty Coffee Association (SCA) dengan cupping score konsisten di atas 84,5 poin.</p>
-        <div class="p-6 rounded-2xl bg-surface-container-low border border-outline-variant/40 mb-8">
-          <p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-4">Catatan Rasa Teridentifikasi:</p>
-          <div class="flex flex-wrap gap-2.5 mb-5">
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/80 font-cupping-mono text-cupping-mono"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Brown Sugar</span>
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/80 font-cupping-mono text-cupping-mono"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Dark Chocolate</span>
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/80 font-cupping-mono text-cupping-mono"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Tangerine Zest</span>
-            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container border border-outline-variant/80 font-cupping-mono text-cupping-mono"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Jasmine</span>
-          </div>
-          <p class="font-body-sm text-body-sm text-on-surface-variant italic">Mouthfeel bulat lembut seperti sirup maple dengan aftertaste manis gula kelapa yang bertahan lama di langit-langit lidah.</p>
-        </div>
-        <div class="border border-outline-variant/30 rounded-2xl overflow-hidden bg-surface-container divide-y divide-outline-variant/30 font-body-md text-body-md">
-          <div class="grid grid-cols-3 p-4 bg-surface-container-high/40 gap-2"><span class="text-on-surface-variant font-medium">Origin</span><span class="col-span-2 font-semibold">Bener Meriah, Dataran Tinggi Gayo, Aceh</span></div>
-          <div class="grid grid-cols-3 p-4 gap-2"><span class="text-on-surface-variant font-medium">Varietas</span><span class="col-span-2">Tim-Tim &amp; Bourbon</span></div>
-          <div class="grid grid-cols-3 p-4 bg-surface-container-high/40 gap-2"><span class="text-on-surface-variant font-medium">Proses</span><span class="col-span-2">Semi-Washed (Wet Hulled) Terkontrol</span></div>
-          <div class="grid grid-cols-3 p-4 gap-2"><span class="text-on-surface-variant font-medium">Profil Roasting</span><span class="col-span-2 text-primary font-semibold">Medium Light (Filter Roast Optimized)</span></div>
-          <div class="grid grid-cols-3 p-4 bg-surface-container-high/40 gap-2"><span class="text-on-surface-variant font-medium">Berat Bersih</span><span class="col-span-2">200 gram (±18–20 cangkir)</span></div>
-          <div class="grid grid-cols-3 p-4 gap-2"><span class="text-on-surface-variant font-medium">Pilihan Gilingan</span><span class="col-span-2">Biji utuh, kasar, medium, halus</span></div>
-          <div class="grid grid-cols-3 p-4 bg-surface-container-high/40 gap-2"><span class="text-on-surface-variant font-medium">Saran Penyimpanan</span><span class="col-span-2 text-on-surface-variant">Sejuk &amp; kedap udara, konsumsi dalam 45 hari</span></div>
-        </div>
+        <em>Mouthfeel bulat lembut seperti sirup maple dengan aftertaste manis gula kelapa yang bertahan lama.</em>
       </div>
+      <dl class="spec">
+        <div><dt>Origin</dt><dd>Bener Meriah, Dataran Tinggi Gayo, Aceh</dd></div>
+        <div><dt>Varietas</dt><dd>Tim-Tim &amp; Bourbon</dd></div>
+        <div><dt>Proses</dt><dd>Semi-Washed (Wet Hulled) terkontrol</dd></div>
+        <div><dt>Profil Roasting</dt><dd class="hi">Medium Light — filter roast optimized</dd></div>
+        <div><dt>Berat Bersih</dt><dd>200 gram (±18–20 cangkir)</dd></div>
+        <div><dt>Pilihan Gilingan</dt><dd>Biji utuh, kasar, medium, halus</dd></div>
+        <div><dt>Saran Penyimpanan</dt><dd>Sejuk &amp; kedap udara, konsumsi dalam 45 hari</dd></div>
+      </dl>
+    </div>
 
-      <div class="lg:col-span-5 scroll-mt-24 w-full" id="pesan">
-        <div class="bg-surface-container-low border border-primary-container/30 rounded-2xl p-6 sm:p-8 shadow-2xl relative">
-          <div class="absolute -top-3 right-6 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-3 py-1 rounded-full uppercase tracking-wider font-bold">Batch Fresh Terbatas</div>
-          <div class="mb-6">
-            <h3 class="font-headline-sm text-headline-sm">Pesan dalam 30 Detik</h3>
-            <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Tanpa repot buat akun. Kami siapkan roasting fresh dan kirim detailnya ke WhatsApp Anda.</p>
-          </div>
-          <form class="space-y-5" id="orderForm" novalidate>
-            <div>
-              <label class="block font-label-md text-label-md mb-2" for="buyer_name">Nama Penerima</label>
-              <input class="w-full h-12 px-4 rounded-xl bg-surface-container border border-outline-variant/60 placeholder:text-on-surface-variant/40 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all" id="buyer_name" name="nama" placeholder="Contoh: Dimas Ramadhan" autocomplete="name" required minlength="3" type="text">
-            </div>
-            <div>
-              <label class="block font-label-md text-label-md mb-2" for="pack_quantity">Jumlah Pack</label>
-              <div class="relative">
-                <select class="w-full h-12 px-4 pr-10 rounded-xl bg-surface-container border border-outline-variant/60 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none appearance-none transition-all cursor-pointer" id="pack_quantity" name="jumlah">
-                  <option value="1">1 Pack — Rp 85.000</option>
-                  <option value="2">2 Pack — Rp 161.500 (Hemat 5%)</option>
-                  <option value="3">3 Pack — Rp 229.500 (Hemat 10%)</option>
-                </select>
-                <span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none" aria-hidden="true">expand_more</span>
-              </div>
-            </div>
-            <div>
-              <label class="block font-label-md text-label-md mb-2" for="grind_size">Tingkat Gilingan</label>
-              <div class="relative">
-                <select class="w-full h-12 px-4 pr-10 rounded-xl bg-surface-container border border-outline-variant/60 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none appearance-none transition-all cursor-pointer" id="grind_size" name="gilingan">
-                  <option>Biji Utuh (Whole Bean) — Paling direkomendasikan</option>
-                  <option>Giling Kasar (Cold Brew / French Press)</option>
-                  <option>Giling Medium (V60 / Kalita / Aeropress)</option>
-                  <option>Giling Halus (Espresso / Mokapot)</option>
-                </select>
-                <span class="material-symbols-outlined absolute right-3 top-3 text-on-surface-variant pointer-events-none" aria-hidden="true">expand_more</span>
-              </div>
-            </div>
-            <div>
-              <label class="block font-label-md text-label-md mb-2" for="shipping_address">Alamat Pengiriman</label>
-              <textarea class="w-full p-4 rounded-xl bg-surface-container border border-outline-variant/60 placeholder:text-on-surface-variant/40 focus:border-primary-container focus:ring-1 focus:ring-primary-container outline-none transition-all resize-none" id="shipping_address" name="alamat" placeholder="Alamat lengkap beserta kecamatan &amp; kota tujuan" autocomplete="street-address" required minlength="8" rows="3"></textarea>
-            </div>
-            <div class="p-4 rounded-xl bg-surface-container-high/60 border border-outline-variant/40 flex items-center justify-between gap-3">
-              <div>
-                <span class="block font-body-sm text-body-sm text-on-surface-variant">Total (Bebas Ongkir P. Jawa):</span>
-                <span class="font-title-lg text-title-lg text-primary font-bold" id="priceDisplay">Rp 85.000</span>
-              </div>
-              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container border border-outline-variant/60 font-cupping-mono text-[11px]">
-                <span class="material-symbols-outlined text-primary text-sm" aria-hidden="true">check_circle</span>
-                <span>Roast Date Seal</span>
-              </div>
-            </div>
-            <p class="font-body-sm text-body-sm text-error hidden" id="formError" role="alert">Mohon lengkapi nama (min. 3 karakter) dan alamat pengiriman (min. 8 karakter).</p>
-            <button class="w-full h-14 rounded-xl bg-primary-container text-on-primary-container font-title-md text-title-md flex items-center justify-center gap-3 amber-glow hover:bg-surface-tint active:scale-[0.98] transition-all duration-200 cursor-pointer" type="submit" data-cta="form">
-              <span class="material-symbols-outlined text-2xl" aria-hidden="true">chat</span>
-              <span>Kirim Pesanan via WhatsApp</span>
-            </button>
-            <p class="text-center font-body-sm text-body-sm text-on-surface-variant">Pembayaran aman via QRIS / transfer bank setelah konfirmasi roasting.</p>
-          </form>
+    <div class="order" id="pesan">
+      <div class="ribbon">Batch Fresh Terbatas</div>
+      <h3>Pesan dalam 30 Detik</h3>
+      <p class="sub">Tanpa repot buat akun. Kami siapkan roasting fresh dan kirim detailnya ke WhatsApp Anda.</p>
+      <form id="orderForm" novalidate>
+        <div class="field">
+          <label for="buyer_name">Nama Penerima</label>
+          <input id="buyer_name" name="nama" type="text" placeholder="Contoh: Dimas Ramadhan" autocomplete="name" required minlength="3">
         </div>
-      </div>
+        <div class="field">
+          <label for="pack_quantity">Jumlah Pack</label>
+          <select id="pack_quantity" name="jumlah">
+            <option value="1">1 Pack — Rp 85.000</option>
+            <option value="2">2 Pack — Rp 161.500 (hemat 5%)</option>
+            <option value="3">3 Pack — Rp 229.500 (hemat 10%)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="grind_size">Tingkat Gilingan</label>
+          <select id="grind_size" name="gilingan">
+            <option>Biji Utuh (Whole Bean) — paling direkomendasikan</option>
+            <option>Giling Kasar (Cold Brew / French Press)</option>
+            <option>Giling Medium (V60 / Kalita / Aeropress)</option>
+            <option>Giling Halus (Espresso / Mokapot)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="shipping_address">Alamat Pengiriman</label>
+          <textarea id="shipping_address" name="alamat" rows="3" placeholder="Alamat lengkap beserta kecamatan &amp; kota tujuan" autocomplete="street-address" required minlength="8"></textarea>
+        </div>
+        <div class="total">
+          <div>
+            <span>Total (bebas ongkir P. Jawa)</span>
+            <b id="priceDisplay">Rp 85.000</b>
+          </div>
+          <div class="seal">✓ Roast Date Seal</div>
+        </div>
+        <p class="error" id="formError" role="alert" hidden>Mohon lengkapi nama (min. 3 karakter) dan alamat pengiriman (min. 8 karakter).</p>
+        <button class="btn btn-primary" type="submit" data-cta="form">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a12 12 0 0 1-5.7-4.6c-.6-.9-1-1.9-1-2.7 0-.8.4-1.4.8-1.8.2-.2.4-.2.6-.2h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.5l-.4.5c-.2.2-.3.3-.1.6a9 9 0 0 0 3.6 3c.3.1.5.1.7-.1l.7-.8c.2-.2.3-.2.5-.1l1.7.8c.3.1.4.2.5.3.1.2.1.7-.1 1.2Z"/></svg>
+          Kirim Pesanan via WhatsApp
+        </button>
+        <p class="fine">Pembayaran aman via QRIS / transfer bank setelah konfirmasi roasting.</p>
+      </form>
     </div>
   </div>
 </section>
 
 <!-- 5. SOCIAL PROOF -->
-<section class="py-24 md:py-32 bg-surface-container-lowest border-y border-outline-variant/30" id="ulasan">
-  <div class="max-w-7xl mx-auto px-6 md:px-12">
-    <div class="text-center max-w-3xl mx-auto mb-16 md:mb-20">
-      <p class="font-label-sm text-label-sm text-primary uppercase tracking-[0.2em] mb-3">Kata Pelanggan</p>
-      <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg tracking-tight mb-4">1.240 pesanan, 4.9 dari 5 bintang.</h2>
-      <p class="font-body-lg text-body-lg text-on-surface-variant">Cerita nyata dari para penikmat kopi seduh manual dan pekerja WFH di seluruh Indonesia.</p>
+<section id="ulasan" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Kata Pelanggan</span>
+      <h2>1.240 pesanan, 4.9 dari 5 bintang.</h2>
+      <p>Cerita nyata dari penikmat kopi seduh manual dan pekerja WFH di seluruh Indonesia.</p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 transition-colors duration-200">
+    <div class="quotes">
+      <article class="quote">
         <div>
-          <div class="text-primary mb-4 text-base tracking-widest" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
-          <p class="font-body-md text-body-md leading-relaxed italic mb-6">“Crema dan floral aromanya luar biasa. Begitu buka seal, langsung semerbak wangi gula aren dan citrus. Tanggal roasting tertera baru 3 hari lalu. Langganan tetap!”</p>
+          <div class="stars" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Crema dan floral aromanya luar biasa. Begitu buka seal, langsung semerbak wangi gula aren dan citrus. Tanggal roasting tertera baru 3 hari lalu. Langganan tetap!”</p>
         </div>
-        <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-          <div class="w-11 h-11 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center font-title-md text-title-md text-primary font-bold">RA</div>
-          <div><h4 class="font-title-md text-title-md">Reza Ardiansyah</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Home Brewer, Jakarta Selatan</p></div>
-        </div>
+        <div class="who"><div class="avatar">RA</div><div><b>Reza Ardiansyah</b><small>Home Brewer, Jakarta Selatan</small></div></div>
       </article>
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 transition-colors duration-200">
+      <article class="quote">
         <div>
-          <div class="text-primary mb-4 text-base tracking-widest" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
-          <p class="font-body-md text-body-md leading-relaxed italic mb-6">“Tiap pagi jadi lebih bersemangat. Asamnya bright tapi lambung sangat aman karena roasting medium-light-nya presisi. Packing valve-nya juga kokoh dan premium banget.”</p>
+          <div class="stars" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Tiap pagi jadi lebih bersemangat. Asamnya bright tapi lambung aman karena roasting medium-light-nya presisi. Packing valve-nya kokoh dan premium banget.”</p>
         </div>
-        <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-          <div class="w-11 h-11 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center font-title-md text-title-md text-primary font-bold">SN</div>
-          <div><h4 class="font-title-md text-title-md">Sarah Nurhaliza</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Content Strategist, Bandung</p></div>
-        </div>
+        <div class="who"><div class="avatar">SN</div><div><b>Sarah Nurhaliza</b><small>Content Strategist, Bandung</small></div></div>
       </article>
-      <article class="bg-surface-container p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between hover:border-primary-container/40 transition-colors duration-200">
+      <article class="quote">
         <div>
-          <div class="text-primary mb-4 text-base tracking-widest" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
-          <p class="font-body-md text-body-md leading-relaxed italic mb-6">“Order jam 10 pagi, besok sore sudah mendarat di Surabaya dalam kondisi segar. Buat V60 rasio 1:15 rasanya sweet &amp; juicy balance. Recommended!”</p>
+          <div class="stars" role="img" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Order jam 10 pagi, besok sore sudah mendarat di Surabaya dalam kondisi segar. Buat V60 rasio 1:15 rasanya sweet &amp; juicy balance. Recommended!”</p>
         </div>
-        <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-          <div class="w-11 h-11 rounded-full bg-surface-container-high border border-outline-variant flex items-center justify-center font-title-md text-title-md text-primary font-bold">FW</div>
-          <div><h4 class="font-title-md text-title-md">Fajar Wicaksono</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Architect, Surabaya</p></div>
-        </div>
+        <div class="who"><div class="avatar">FW</div><div><b>Fajar Wicaksono</b><small>Architect, Surabaya</small></div></div>
       </article>
     </div>
   </div>
 </section>
 </main>
 
-<!-- 6. FOOTER + KONTAK -->
-<footer class="bg-surface-container-lowest border-t border-outline-variant/30" id="kontak">
-  <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 w-full">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 mb-16">
-      <div class="md:col-span-4 flex flex-col items-start">
-        <a class="font-headline-sm text-headline-sm tracking-wider text-primary font-semibold mb-4 inline-block" href="#top">KALA COFFEE</a>
-        <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed max-w-sm mb-6">Roastery independen mikro di Bandung yang mendedikasikan setiap gram kopi untuk ritual pagi Anda yang berkualitas.</p>
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container border border-outline-variant/40 font-cupping-mono text-cupping-mono text-on-surface-variant">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Batch Roasting Aktif Hari Ini</span>
-        </div>
+<!-- 6. KONTAK -->
+<footer id="kontak">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><i></i>KALA COFFEE</a>
+        <p class="blurb">Roastery independen mikro di Bandung yang mendedikasikan setiap gram kopi untuk ritual pagi Anda.</p>
+        <span class="live"><i></i>Batch roasting aktif hari ini</span>
       </div>
-      <div class="md:col-span-2">
-        <h3 class="font-label-md text-label-md uppercase tracking-wider mb-4 font-semibold">Navigasi</h3>
-        <ul class="space-y-3 font-body-sm text-body-sm">
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#top">Beranda</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#keunggulan">Keunggulan</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#produk">Detail Produk</a></li>
-          <li><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#ulasan">Ulasan</a></li>
+      <div>
+        <h3>Navigasi</h3>
+        <ul>
+          <li><a href="#top">Beranda</a></li>
+          <li><a href="#keunggulan">Keunggulan</a></li>
+          <li><a href="#produk">Detail Produk</a></li>
+          <li><a href="#ulasan">Ulasan</a></li>
         </ul>
       </div>
-      <div class="md:col-span-3">
-        <h3 class="font-label-md text-label-md uppercase tracking-wider mb-4 font-semibold">Hubungi Kami</h3>
-        <ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
-          <li class="flex items-center gap-2"><span class="text-primary font-semibold">WA:</span><a class="hover:text-primary transition-colors" href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a></li>
-          <li class="flex items-center gap-2"><span class="text-primary font-semibold">Email:</span><a class="hover:text-primary transition-colors" href="mailto:halo@kalacoffee.id">halo@kalacoffee.id</a></li>
-          <li class="flex items-center gap-2"><span class="text-primary font-semibold">IG:</span><a class="hover:text-primary transition-colors" href="https://instagram.com/kalacoffee.roastery" target="_blank" rel="noopener">@kalacoffee.roastery</a></li>
+      <div>
+        <h3>Hubungi Kami</h3>
+        <ul>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WA · +62 812-3456-7890</a></li>
+          <li><a href="mailto:halo@kalacoffee.id">halo@kalacoffee.id</a></li>
+          <li><a href="https://instagram.com/kalacoffee.roastery" target="_blank" rel="noopener">IG · @kalacoffee.roastery</a></li>
         </ul>
       </div>
-      <div class="md:col-span-3">
-        <h3 class="font-label-md text-label-md uppercase tracking-wider mb-4 font-semibold">Roastery &amp; Workshop</h3>
-        <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-3">Jl. Bengawan No. 42, Cihapit, Bandung, Jawa Barat.</p>
-        <p class="font-body-sm text-body-sm text-on-surface-variant"><span class="font-medium text-on-surface">Jam Sangrai:</span><br>Senin–Sabtu, 08.00–17.00 WIB</p>
+      <div>
+        <h3>Roastery</h3>
+        <ul>
+          <li>Jl. Bengawan No. 42, Cihapit, Bandung, Jawa Barat</li>
+          <li>Senin–Sabtu, 08.00–17.00 WIB</li>
+        </ul>
       </div>
     </div>
-    <div class="pt-8 border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="font-body-sm text-body-sm text-on-surface-variant text-center sm:text-left">© 2026 KALA COFFEE. Dipanggang dengan cermat di Bandung, Indonesia.</p>
-      <div class="flex items-center space-x-6">
-        <span class="text-on-surface-variant font-label-sm text-label-sm">Kebijakan Privasi</span>
-        <span class="text-on-surface-variant font-label-sm text-label-sm">Syarat &amp; Ketentuan</span>
-      </div>
+    <div class="legal">
+      <span>© 2026 KALA COFFEE. Dipanggang dengan cermat di Bandung, Indonesia.</span>
+      <span>LKPD Digital Marketing — XII RPL</span>
     </div>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="fixed bottom-6 right-6 z-40 inline-flex items-center gap-3 px-5 py-3 rounded-full bg-surface-container-high/90 backdrop-blur-md border border-outline-variant/80 hover:border-primary-container shadow-2xl hover:scale-105 active:scale-95 transition-all duration-200 group"
-   href="https://wa.me/6281234567890?text=Halo%20Kala%20Coffee%2C%20saya%20ingin%20bertanya%20soal%20roasting%20fresh%20minggu%20ini"
+<a class="fab" href="https://wa.me/6281234567890?text=Halo%20Kala%20Coffee%2C%20saya%20ingin%20bertanya%20soal%20roasting%20fresh%20minggu%20ini"
    target="_blank" rel="noopener" aria-label="Tanya roastmaster lewat WhatsApp">
-  <span class="relative flex h-3 w-3">
-    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-    <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
-  </span>
-  <span class="font-label-md text-label-md group-hover:text-primary transition-colors">Tanya Roastmaster</span>
-  <span class="material-symbols-outlined text-primary text-xl" aria-hidden="true">support_agent</span>
+  <i></i><span>Tanya Roastmaster</span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.5A9 9 0 1 1 21 12Z"/></svg>
 </a>
 
 <script>
-  // Satu sumber harga: ubah di sini saja
+  // Satu sumber harga & nomor: ubah di sini saja
   const PAKET = { 1: 85000, 2: 161500, 3: 229500 };
   const WA = "6281234567890";
   const rupiah = (n) => "Rp " + n.toLocaleString("id-ID");
@@ -430,11 +481,11 @@
 
     // Validasi di trust boundary: nama & alamat wajib
     if (nama.value.trim().length < 3 || alamat.value.trim().length < 8) {
-      errorBox.classList.remove("hidden");
+      errorBox.hidden = false;
       (!nama.value.trim() || nama.value.trim().length < 3 ? nama : alamat).focus();
       return;
     }
-    errorBox.classList.add("hidden");
+    errorBox.hidden = true;
 
     const pesan =
       "Halo Kala Coffee! Saya ingin memesan kopi fresh roast:%0A%0A" +
