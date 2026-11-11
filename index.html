@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kala Coffee — Kopi Single Origin Panggang Segar</title>
+<meta name="description" content="Kala Coffee: kopi single origin Gayo dan Toraja, dipanggang 7 hari sebelum dikirim. Pesan sekarang, gratis ongkir se-Indonesia.">
+<style>
+  :root{
+    --bg:#12100e; --bg2:#1b1815; --ink:#f5efe6; --muted:#b6a99a;
+    --brand:#e0a45e; --brand2:#c07a35; --line:rgba(245,239,230,.12);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font:16px/1.65 "Segoe UI",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1120px,92vw);margin-inline:auto}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.6rem;border-radius:999px;font-weight:700;border:1px solid transparent;cursor:pointer;transition:.2s}
+  .btn-main{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#1a1004;box-shadow:0 10px 28px -12px var(--brand)}
+  .btn-main:hover{transform:translateY(-2px);box-shadow:0 16px 34px -14px var(--brand)}
+  .btn-ghost{border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{background:rgba(245,239,230,.06)}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+
+  /* NAV */
+  header{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(18,16,14,.78);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.85rem 0}
+  .logo{font-weight:800;letter-spacing:.14em;font-size:.95rem}
+  .logo span{color:var(--brand)}
+  .navlinks{display:flex;gap:1.6rem;font-size:.92rem;color:var(--muted)}
+  .navlinks a:hover{color:var(--ink)}
+  @media(max-width:760px){.navlinks{display:none}}
+
+  /* HERO */
+  .hero{position:relative;overflow:hidden;padding:clamp(3.5rem,9vw,7rem) 0 clamp(3rem,7vw,5.5rem)}
+  .hero::before{content:"";position:absolute;inset:-30% 30% 40% -20%;background:radial-gradient(circle at 30% 30%,rgba(224,164,94,.28),transparent 62%);filter:blur(10px)}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  @media(max-width:880px){.hero-grid{grid-template-columns:1fr}}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);border:1px solid rgba(224,164,94,.35);padding:.4rem .85rem;border-radius:999px;margin-bottom:1.3rem}
+  h1{font-size:clamp(2.1rem,5.4vw,3.6rem);line-height:1.08;letter-spacing:-.025em;font-weight:800}
+  h1 em{font-style:normal;color:var(--brand)}
+  .lede{color:var(--muted);font-size:1.06rem;max-width:46ch;margin:1.2rem 0 2rem}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.8rem}
+  .microtrust{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:2rem;font-size:.85rem;color:var(--muted)}
+  .microtrust b{display:block;color:var(--ink);font-size:1.15rem;font-family:Georgia,serif}
+
+  /* PRODUCT VISUAL (CSS only, no external file) */
+  .pack{position:relative;aspect-ratio:4/5;border-radius:22px;overflow:hidden;display:grid;place-items:center;
+    background:
+      radial-gradient(circle at 72% 22%,rgba(224,164,94,.5),transparent 55%),
+      linear-gradient(160deg,#2b211a,#141110 65%);
+    border:1px solid var(--line);box-shadow:0 40px 80px -50px #000}
+  .bag{position:relative;width:56%;aspect-ratio:1/1.42;border-radius:6px 6px 14px 14px;
+    background:linear-gradient(155deg,#3a2c21,#201812 60%,#171210);
+    border:1px solid rgba(224,164,94,.28);display:grid;place-items:center;transform:rotate(-4deg);
+    box-shadow:0 30px 50px -24px #000, inset 0 1px 0 rgba(255,255,255,.06)}
+  .bag::after{content:"";position:absolute;top:0;left:12%;right:12%;height:9px;background:repeating-linear-gradient(90deg,#0d0a08 0 6px,transparent 6px 12px);opacity:.7}
+  .bag-label{text-align:center;padding:1rem}
+  .bag-label small{display:block;font-size:.6rem;letter-spacing:.3em;color:var(--brand);margin-bottom:.4rem}
+  .bag-label strong{font-family:Georgia,serif;font-size:1.5rem;letter-spacing:.06em;display:block}
+  .bag-label i{font-style:normal;font-size:.6rem;letter-spacing:.22em;color:var(--muted)}
+  .seal{position:absolute;bottom:8%;right:8%;width:74px;height:74px;border-radius:50%;display:grid;place-items:center;text-align:center;
+    background:radial-gradient(circle,#e0a45e,#a8652a);color:#1a1004;font-size:.55rem;font-weight:800;letter-spacing:.1em;line-height:1.2;
+    box-shadow:0 10px 24px -10px #000;transform:rotate(8deg)}
+
+  /* SECTIONS */
+  section{padding:clamp(3.5rem,8vw,6rem) 0}
+  .sec-head{max-width:60ch;margin-bottom:2.8rem}
+  .sec-head h2{font-size:clamp(1.6rem,3.4vw,2.4rem);letter-spacing:-.02em;line-height:1.18}
+  .sec-head p{color:var(--muted);margin-top:.7rem}
+  .tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brand);display:block;margin-bottom:.7rem}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.1rem}
+  .card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:1.6rem;transition:.2s}
+  .card:hover{border-color:rgba(224,164,94,.4);transform:translateY(-3px)}
+  .card .ico{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:rgba(224,164,94,.14);color:var(--brand);font-size:1.1rem;margin-bottom:1rem}
+  .card h3{font-size:1.02rem;margin-bottom:.45rem}
+  .card p{color:var(--muted);font-size:.92rem}
+
+  /* DETAIL / SPECS */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  @media(max-width:880px){.split{grid-template-columns:1fr}}
+  .spec{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line);font-size:.94rem}
+  .spec span{color:var(--muted)}
+  .spec b{font-weight:600;text-align:right}
+  .note{margin-top:1.4rem;font-size:.85rem;color:var(--muted);border-left:2px solid var(--brand);padding-left:.9rem}
+
+  /* ORDER FORM */
+  .order{background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:clamp(1.5rem,4vw,2.4rem)}
+  .field{margin-bottom:.9rem}
+  .field label{display:block;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:.35rem}
+  .field input,.field select{width:100%;padding:.75rem .9rem;border-radius:10px;background:#0e0c0a;border:1px solid var(--line);color:var(--ink);font:inherit;font-size:.95rem}
+  .field input:focus,.field select:focus{border-color:var(--brand)}
+  .field.err input{border-color:#e0685e}
+  .total{display:flex;justify-content:space-between;align-items:baseline;padding:.9rem 0;border-top:1px dashed var(--line);margin-top:.4rem;font-size:.9rem;color:var(--muted)}
+  .total b{font-size:1.35rem;color:var(--brand);font-family:Georgia,serif}
+  .order .btn-main{width:100%;justify-content:center;margin-top:.6rem}
+  .form-note{font-size:.76rem;color:var(--muted);text-align:center;margin-top:.7rem}
+
+  /* TESTIMONIALS */
+  .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.1rem}
+  .quote{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:1.5rem;display:flex;flex-direction:column;gap:.9rem}
+  .stars{color:var(--brand);letter-spacing:.15em;font-size:.85rem}
+  .quote p{font-size:.94rem;color:#e7ded1}
+  .who{display:flex;align-items:center;gap:.7rem;margin-top:auto}
+  .avatar{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:.8rem;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#1a1004}
+  .who small{display:block;color:var(--muted);font-size:.78rem}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:3rem 0 2rem;background:#0e0c0a}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2rem}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr}}
+  .foot-grid h4{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);margin-bottom:.9rem}
+  .foot-grid ul{list-style:none;display:grid;gap:.5rem;font-size:.9rem;color:var(--muted)}
+  .foot-grid a:hover{color:var(--ink)}
+  .copy{margin-top:2.5rem;padding-top:1.4rem;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+  /* Floating WA */
+  .fab{position:fixed;right:18px;bottom:18px;z-index:30;display:inline-flex;align-items:center;gap:.5rem;padding:.8rem 1.15rem;border-radius:999px;background:#25d366;color:#08210f;font-weight:700;font-size:.9rem;box-shadow:0 14px 30px -12px rgba(37,211,102,.8)}
+  .fab:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">KALA<span>·</span>COFFEE</a>
+      <div class="navlinks">
+        <a href="#unggulan">Keunggulan</a>
+        <a href="#detail">Detail Produk</a>
+        <a href="#ulasan">Ulasan</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+      <a class="btn btn-main" href="#pesan" data-cta="nav">Pesan Sekarang</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Single Origin · Roasted Fresh</span>
+        <h1>Kopi yang <em>baru dipanggang</em> minggu ini, bukan setahun lalu.</h1>
+        <p class="lede">Biji arabika Gayo dan Toraja pilihan, disangrai dalam batch kecil lalu dikirim maksimal 7 hari setelah roasting. Rasa yang masih hidup sampai cangkir terakhir.</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="#pesan" data-cta="hero">Pesan Sekarang — Rp 85.000</a>
+          <a class="btn btn-ghost" href="#detail">Lihat Detail Produk</a>
+        </div>
+        <div class="microtrust">
+          <div><b>4.9/5</b>dari 1.240 ulasan</div>
+          <div><b>7 hari</b>garansi roast terbaru</div>
+          <div><b>Gratis</b>ongkir se-Indonesia</div>
+        </div>
+      </div>
+      <div class="pack" role="img" aria-label="Kemasan kopi Kala Coffee varian Gayo 200 gram">
+        <div class="bag">
+          <div class="bag-label">
+            <small>KALA COFFEE</small>
+            <strong>GAYO</strong>
+            <i>ARABICA · 200G</i>
+          </div>
+        </div>
+        <div class="seal">ROASTED<br>THIS WEEK</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section id="unggulan">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Kenapa Kala</span>
+        <h2>Tiga hal yang bikin rasa kopimu beda.</h2>
+        <p>Bukan soal kemasan mahal — soal seberapa cepat kopi sampai di cangkirmu setelah dipanggang.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="ico">☕</div>
+          <h3>Fresh Roast, Bukan Stok Gudang</h3>
+          <p>Kami sangrai per pesanan dalam batch 5 kg. Tanggal roasting tercetak di setiap kemasan, jadi kamu tahu persis umur bijinya.</p>
+        </article>
+        <article class="card">
+          <div class="ico">🌱</div>
+          <h3>Langsung dari Petani</h3>
+          <p>Green bean dibeli langsung dari koperasi petani Gayo dan Toraja dengan harga 18% di atas harga tengkulak.</p>
+        </article>
+        <article class="card">
+          <div class="ico">📦</div>
+          <h3>Kemasan One-Way Valve</h3>
+          <p>Gas CO₂ keluar, oksigen tidak masuk. Aroma bertahan hingga 3 bulan setelah tanggal roasting.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAIL + ORDER -->
+  <section id="detail">
+    <div class="wrap split">
+      <div>
+        <span class="tag">Detail Produk</span>
+        <h2 style="font-size:clamp(1.6rem,3.4vw,2.2rem);letter-spacing:-.02em">Kala Gayo Arabica 200g</h2>
+        <p style="color:var(--muted);margin:.8rem 0 1.6rem">Profil rasa cokelat gelap, jeruk manis, dan sedikit rempah di akhir. Cocok untuk V60, Aeropress, maupun espresso.</p>
+        <div class="spec"><span>Origin</span><b>Gayo, Aceh Tengah — 1.400 mdpl</b></div>
+        <div class="spec"><span>Varietas</span><b>Ateng Super, Bourbon</b></div>
+        <div class="spec"><span>Proses</span><b>Full wash · sun dried</b></div>
+        <div class="spec"><span>Tingkat roasting</span><b>Medium (City+)</b></div>
+        <div class="spec"><span>Berat bersih</span><b>200 gram</b></div>
+        <div class="spec"><span>Giling</span><b>Biji utuh / halus / kasar</b></div>
+        <div class="spec"><span>Penyimpanan</span><b>3 bulan dari tanggal roasting</b></div>
+        <p class="note">Setiap pembelian 2 pack mendapat gratis 1 drip bag sampler — otomatis ditambahkan ke pesananmu.</p>
+      </div>
+
+      <div class="order" id="pesan">
+        <h3 style="font-size:1.15rem;margin-bottom:1.2rem">Pesan dalam 30 detik</h3>
+        <form id="orderForm" novalidate>
+          <div class="field" id="f-nama">
+            <label for="nama">Nama Penerima</label>
+            <input id="nama" name="nama" placeholder="Contoh: Rani Putri" autocomplete="name" required>
+          </div>
+          <div class="field" id="f-qty">
+            <label for="qty">Jumlah Pack</label>
+            <select id="qty" name="qty">
+              <option value="1">1 pack — Rp 85.000</option>
+              <option value="2">2 pack — Rp 160.000 (hemat 10rb)</option>
+              <option value="3">3 pack — Rp 235.000</option>
+              <option value="5">5 pack — Rp 380.000</option>
+            </select>
+          </div>
+          <div class="field" id="f-giling">
+            <label for="giling">Tingkat Gilingan</label>
+            <select id="giling" name="giling">
+              <option>Biji utuh (paling awet)</option>
+              <option>Halus — moka pot / tubruk</option>
+              <option>Sedang — V60 / dripper</option>
+              <option>Kasar — French press</option>
+            </select>
+          </div>
+          <div class="field" id="f-alamat">
+            <label for="alamat">Alamat Pengiriman</label>
+            <input id="alamat" name="alamat" placeholder="Jalan, kota, kode pos" autocomplete="street-address" required>
+          </div>
+          <div class="total"><span>Total (gratis ongkir)</span><b id="total">Rp 85.000</b></div>
+          <button class="btn btn-main" type="submit" data-cta="form">Kirim Pesanan via WhatsApp</button>
+          <p class="form-note">Pesanan diteruskan ke WhatsApp admin. Pembayaran dilakukan setelah konfirmasi stok.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section id="ulasan">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="tag">Kata Pelanggan</span>
+        <h2>1.240 pesanan, 4.9 dari 5 bintang.</h2>
+      </div>
+      <div class="quotes">
+        <article class="quote">
+          <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Baru buka kemasan, wanginya langsung keluar. Tanggal roasting-nya cuma 3 hari lalu — beda banget sama kopi supermarket.”</p>
+          <div class="who"><div class="avatar">RP</div><div><b>Rani Putri</b><small>Bandung · pembeli 4x</small></div></div>
+        </article>
+        <article class="quote">
+          <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Buat espresso di rumah, crema-nya tebal dan nggak pahit. Gilingan sesuai pesanan, jadi nggak perlu giling sendiri.”</p>
+          <div class="who"><div class="avatar">DK</div><div><b>Dimas K.</b><small>Surabaya · home barista</small></div></div>
+        </article>
+        <article class="quote">
+          <div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+          <p>“Order Jumat, Senin sudah sampai. Packing rapi dan ada kartu ucapan tulisan tangan. Repeat order terus.”</p>
+          <div class="who"><div class="avatar">AS</div><div><b>Ayu Safira</b><small>Yogyakarta · pembeli 6x</small></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="kontak">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="logo" style="margin-bottom:.8rem">KALA<span>·</span>COFFEE</div>
+        <p style="color:var(--muted);font-size:.9rem;max-width:34ch">Roastery kecil di Bandung. Menyangrai kopi single origin Nusantara dalam batch kecil sejak 2021.</p>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">WhatsApp +62 812-3456-7890</a></li>
+          <li><a href="mailto:halo@kalacoffee.id">halo@kalacoffee.id</a></li>
+          <li><a href="https://instagram.com/kalacoffee.id" target="_blank" rel="noopener">Instagram @kalacoffee.id</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Roastery</h4>
+        <ul>
+          <li>Jl. Cihampelas No. 118</li>
+          <li>Bandung, Jawa Barat 40131</li>
+          <li>Buka Senin–Sabtu, 08.00–17.00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 Kala Coffee. Semua harga sudah termasuk pajak.</span>
+      <span>Dibuat untuk LKPD Digital Marketing — XII RPL</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/6281234567890?text=Halo%20Kala%20Coffee%2C%20saya%20mau%20tanya%20soal%20produknya" target="_blank" rel="noopener" aria-label="Hubungi WhatsApp">
+  <span aria-hidden="true">💬</span> Chat Admin
+</a>
+
+<script>
+  // Harga per jumlah pack (diskon dihitung penjual, bukan loop)
+  const HARGA = {1: 85000, 2: 160000, 3: 235000, 5: 380000};
+  const WA = "6281234567890";
+
+  const $ = (s) => document.querySelector(s);
+  const qty = $("#qty"), total = $("#total"), form = $("#orderForm");
+
+  const rupiah = (n) => "Rp " + n.toLocaleString("id-ID");
+
+  qty.addEventListener("change", () => {
+    total.textContent = rupiah(HARGA[qty.value]);
+  });
+
+  // Validasi minimal di trust boundary: nama & alamat wajib
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nama = $("#nama"), alamat = $("#alamat");
+    let ok = true;
+    [[nama, "#f-nama"], [alamat, "#f-alamat"]].forEach(([el, box]) => {
+      const bad = el.value.trim().length < 3;
+      $(box).classList.toggle("err", bad);
+      ok = ok && !bad;
+    });
+    if (!ok) return;
+
+    const pesan =
+      `Halo Kala Coffee, saya mau pesan:%0A` +
+      `• Nama: ${encodeURIComponent(nama.value.trim())}%0A` +
+      `• Jumlah: ${qty.value} pack (${rupiah(HARGA[qty.value])})%0A` +
+      `• Gilingan: ${encodeURIComponent($("#giling").value)}%0A` +
+      `• Alamat: ${encodeURIComponent(alamat.value.trim())}`;
+
+    window.open(`https://wa.me/${WA}?text=${pesan}`, "_blank", "noopener");
+  });
+</script>
+</body>
+</html>
+
